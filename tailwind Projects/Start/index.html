@@ -7,13 +7,71 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>CoreChip Technology</title>
 </head>
-<body class="bg-gray-100">
-  <!-- Header Section -->
-  <header class="bg-white shadow-lg">
-      <div class="container mx-auto py-4 px-4">
-          <h1 class="text-2xl font-bold text-gray-800">CoreChip Technology</h1>
+<body class="bg-slate-900">
+
+  <nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <img class="h-8 w-auto" src="Img/logo.png" alt="Your Company">
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">View notifications</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+            </svg>
+          </button>
+  
+          <!-- Profile dropdown -->
+          
+        </div>
       </div>
-  </header>
+    </div>
+  
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+      </div>
+    </div>
+    
+    
+    
+
+  </nav>
+  <!-- Header Section -->
   <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
     <img src="Img/07.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
     <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
@@ -55,41 +113,31 @@
       </div>
     </div>
   </div>
-  <!-- Main Section -->
-  <main class="container mx-auto py-8 px-4">
-    <div class="max-w-xl mx-auto flex items-center">
-        <img src="Img/07.jpg" alt="Image Description" class="mr-4 w-20 h-20 rounded-full">
-        <div>
-            <h2 class="text-xl font-semibold text-gray-800 mb-4">Welcome to our website!</h2>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu turpis
-                euismod, vehicula odio id, accumsan urna.</p>
-            <p class="text-gray-600 mb-4">Nullam et lacus nec metus dapibus tincidunt. Duis vel risus quis turpis
-                convallis eleifend.</p>
-            <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">Learn
-                More</a>
-        </div>
-    </div>
-</main>
+<br><br>
 
-
-  <div class="max-w-4xl mx-auto mt-8">
-    <h2 class="text-xl font-semibold text-gray-800 mb-4">Gallery</h2>
-    <div class="grid grid-cols-3 gap-4">
-        <!-- Image 1 -->
-        <div>
-            <img src="Img/Profile.png" alt="Image 1" class="rounded-lg">
+<div class="container mx-auto">
+  <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-700">
+    <img class="w-24 h-24 rounded-full mx-auto" src="Img/Profile.png" alt="" width="384" height="512">
+    <div class="pt-6 md:p-8 text-center m space-y-4">
+      <blockquote>
+        <p class="font-mono text-lg text-current font-medium text-slate-50">
+          “Tailwind CSS is the only framework that I've seen scale
+          on large teams. It’s easy to customize, adapts to any design,
+          and the build size is tiny.”
+        </p>
+      </blockquote>
+      <figcaption class="font-medium">
+        <div class="text-sky-500 dark:text-sky-400">
+          Kavindu Maduranga
         </div>
-        <!-- Image 2 -->
-        <div>
-            <img src="Img/Profile.png" alt="Image 2" class="rounded-lg">
+        <div class="text-slate-700 dark:text-slate-500">
+          Core Chip Technology CEO
         </div>
-        <!-- Image 3 -->
-        <div>
-            <img src="Img/Profile.png" alt="Image 3" class="rounded-lg">
-        </div>
+      </figcaption>
     </div>
+  </figure>
 </div>
-</main>
+
 <br><br>
   <!-- Footer Section -->
   <footer class="bg-gray-800 text-white py-4">
@@ -98,4 +146,6 @@
       </div>
   </footer>
 </body>
+
+
 </html>
